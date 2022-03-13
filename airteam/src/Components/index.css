@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #29e7e1;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(23, 160, 223);
+}
+
+.logo {
+  color: azure;
+}
+
+.Days {
+  position: absolute;
+  left: 10px;
+  color: azure;
+  padding-left: 20px;
+}
+
+.timeD {
+  position: absolute;
+  right: 10px;
+  color: azure;
+  padding-right: 20px;
+}
+
+.cfirst:first-letter {
+  text-transform: uppercase;
+}
+
+.footers {
+  height: 40px;
+  background-color: rgb(23, 160, 223);
+  color: white;
+  margin-top: 30px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
+  display: flex;
+}
+
+.containerL,
+.containerR {
+  flex-basis: 50%;
+}
+
+.containerL {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+  grid-gap: 2rem;
+}
+.photo {
+  width: 100px;
+  height: 100px;
+}
+
+.photo:hover {
+  width: 300px;
+  height: 100px;
+}
+.box {
+  width: 300px;
+  background-color: hotpink;
+  border-radius: 1rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.containerR {
+  width: 50%;
+  text-align: center;
+  position: fixed;
+  top: 200px;
+  right: 10px;
+}
+
+.containerR img {
+  margin: 2rem;
+  height: 180px;
+}
+
+.containerR img:hover {
+  height: 240px;
+}
+
+.containerR h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.abilities {
+  width: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1 rem;
+  gap: 5px;
+}
+
+.abilities .group {
+  background-color: #b74555;
+  color: white;
+  padding: 0.5rem;
+  font-size: 12px;
+  border-radius: 8px;
+  justify-content: space-between;
+}
+
+.base-stat {
+  margin-top: 2rem;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.btn-group button {
+  outline: none;
+  border: none;
+  width: 150px;
+  padding: 0.3rem 0;
+  margin: 1rem;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background-color: #b74555;
+  border-radius: 8px;
+}
