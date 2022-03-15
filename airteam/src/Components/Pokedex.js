@@ -13,10 +13,10 @@ const Pokedex = ({ data }) => {
             alt=""
           />
           <div className="abilities">
-            {data.abilities.map((poke) => {
+            {data.abilities.map((poke, index) => {
               return (
                 <>
-                  <div className="group">
+                  <div className="group" key="index">
                     <h2>{poke.ability.name}</h2>
                   </div>
                 </>
@@ -24,10 +24,10 @@ const Pokedex = ({ data }) => {
             })}
           </div>
           <div className="base-stat">
-            {data.stats.map((poke) => {
+            {data.stats.map((poke, index) => {
               return (
                 <>
-                  <h3>
+                  <h3 key="index">
                     {poke.stat.name} : {poke.base_stat}
                   </h3>
                 </>
