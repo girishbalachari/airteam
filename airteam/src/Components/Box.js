@@ -6,12 +6,12 @@ const Box = ({ pokemon, loading, infoPokemon }) => {
       {loading ? (
         <h1>Loading.....</h1>
       ) : (
-        pokemon.map((item) => {
+        pokemon.map((item, index) => {
           return (
             <>
               <div
                 className="box"
-                key={item.id}
+                key="index"
                 onClick={() => infoPokemon(item)}
               >
                 <h2>{item.id}</h2>
